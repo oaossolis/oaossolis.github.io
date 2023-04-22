@@ -1,26 +1,44 @@
-
 body{
-    position: relative;
-    background-color:#F3F5FC;
+    width:100%;
+    background-color: #F3F5FC;;
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+}
+
+#wrapper{
     width:100%;
 }
 
+#aluraLogo{
+    max-width:100%;
+    padding-left:2.8%;
+    padding-top:40px;
+}
 
-#Logo{
-    display:flex;
-    justify-content:center;
+#txtInArea{
     position: absolute;
-    max-width: 100%;
-    height: auto;
-    left: 2.77vw;
-    top: 3.906vh;
+    width: 47.22vw;
+    height: 64.355vh;
+    left: 16.66vw;
+    top: 16.406vh;
+}
+
+#txtIn{
+    height:100%;
+    width:100%;
+    font-size: 2em;
+    border: none;
+    background-color: transparent;
+    color:#0A3871;
+    outline: none;
 }
 
 #txtOutArea{
-    display: flex;
-    align-items: center;
+    display:flex;
     flex-direction: column;
-    position: absolute;
+    align-items: center;
+    position:absolute;
     width: 27.778vw;
     height: 92.188vh;
     left: 69.444vw;
@@ -33,125 +51,65 @@ body{
 }
 
 #imgMuneco{
-    padding-top: 23.828vh;
-    width: 23.333vw;
-    height: 29.688vh;
-    padding-bottom: 3.12vh
+    position:absolute;
+    top:25.741%;
+    width:60%;
 }
 
 #txtOutIndication{
-    width: 23.333vw;
-    height: 11.914vh;
+    position:absolute;
+    top:59%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width:84%;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 p:nth-child(1){
-    font-family:Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.5em;
-    line-height: 120%;   
-    text-align: center;   
-    color: #343A40;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0; 
+    font-size:1.5em;
+    font-weight:700;
+    color:#343A40;
 }
 
 p:nth-child(2){
-    font-family:Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1em;
-    text-align: center;
-    color: #495057;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
+    font-size:1em;
+    font-weight:400;
+    color:#495057;
 }
 
 #txtOut{
-    padding:30px;
-    padding-bottom: 131px;
-    width: 23.333vw;
-    height: 76.270vh;
-    background: #FFFFFF;
-    resize: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5em;
-    line-height: 150%;
-    color: #495057;
     display:none;
-    border: none;
-    border-radius: 32px;
-    outline: none;
-}
-#txtInArea{
-    position: absolute;
-    width: 47.22vw;
-    height: 64.355vh;
-    left: 16.66vw;
-    top: 16.406vh;
-}
-
-#txtIn{
-    width: 100%;
-    height: 100%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2em;
-    line-height: 150%;
-    color: #0A3871;
-    border: none;
+    font-family:Arial, Helvetica, sans-serif;
+    width:84%;
+    height:83%;
     background-color: transparent;
     outline: none;
-    resize: none;
+    border:none;
+    font-size:1.5em;
+    font-weight:400;
+    padding:32px;
+    padding-bottom:0;
 }
 
-#indicaciones{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    width: 15.903vw;
-    height: 1.758vh;
-    left: 16.667vw;
-    top: 83.105vh;
-    color: #495057;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875em;
-    line-height: 150%;
+#copybttn{
+    position:absolute;
+    left:8%;
+    bottom:3.3898%;
+    display:none;
+    width: 22.778vw;
+    height:6.543vh;
 }
 
-#botones{
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 47.2222vw;
-    height: 6.543vh;
-    left: 16.667vw;
-    top: 86.426vh;
-} 
-
-#button1{
-    color:#FFFF;
-    background: #0A3871;
-
+#copy{
+    height:100%;
+    width:100%;
+    color:#0A3871;
+    background-color: transparent;
 }
 
-#button2{
-    color: #0A3871;
-    background: #D8DFE8;
-    border: 1px solid #0A3871;
-}
 .buttons{
-    font-family: 'Inter';
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1em;
@@ -163,201 +121,171 @@ p:nth-child(2){
     order: 1;
     flex-grow: 0;
     cursor: pointer;
-}
-#copy{
     border: 1px solid #0A3871;
-    border-radius: 24px;
-    background-color: transparent;
-    cursor:pointer;
-    color: #0A3871;
-    font-size: 1em;;
-    font-weight: 400;
-    width:100%;
-    height:100%;
 }
 
-#copybttn{
-    display:none;
-    position: absolute;
-    width: 23.333vw;
+#botones{
+    display:flex;
+    justify-content: space-between;
+    position:absolute;
+    width: 47.2222vw;
     height: 6.543vh;
-    left: 71.667vw;
+    left: 16.667vw;
     top: 86.426vh;
 }
 
+#button1{
+    background-color: #0A3871;
+    color:#FFFFFF;
+}
 
+#button2{
+    background-color: transparent;
+    color:#0A3871;
+}
+
+#indicaciones{
+    font-size:.75em;
+    position:absolute;
+    width:auto;
+    left: 16.667vw;
+    top: 83.105vh;
+    color: #495057;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#informacion{
+    position:absolute;
+    bottom:10px;
+    left:16.667vw;
+    color:gray;
+}
+
+footer{
+    font-size:1em;
+}
+
+i{
+    color:#1e3050;
+}
 
 
 @media only screen and (max-width:768px){
-    #imgMuneco{
-        display:none;
-    }
-  
-    #Logo{
-        position: absolute;
-        display:flex;
-        left: 40px;
-        top: 73.42px;
-        justify-content:center;
+
+    #aluraLogo{
+        padding-left:40px;
+        padding-top:73.43px;
     }
 
     #txtInArea{
-        position: absolute;
-        width: 688px;
-        height: 580px;
-        left: 40px;
-        top: 240px;
-    }
-
-    #botones{
-        position: absolute;
-        width: 688px;
-        height: 67px;
-        left: 40px;
-        top: 870px;
-        }
-
-
-    .buttons{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 24px;
-        width: 332px;
-        height: 67px;
-        justify-content: center;
-    }
-
-
-    #txtOutArea{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        position: absolute;
-        width: 688px;
-        height: 343px;
-        left: 40px;
-        top: 1001px;
-        background: #FFFFFF;
-        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-        border-radius: 32px;
-    }
-
-    #txtOutIndication{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        height: 69px;
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
+        width:688px;
+        height:582px;
+        left:40px;
+        top:240px;
     }
 
     #indicaciones{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        position: absolute;
-        width: 229px;
-        height: 18px;
-        left: 40px;
-        top: 836px;
+        left:40px;
+        top:840px;
+    }
+
+    #botones{
+        left:40px;
+        top:870px;
+        width:688px;
+        height:67px;
+    }
+
+    .buttons{
+        width:332px;
+    }
+
+    #txtOutArea{
+        left:40px;
+        top:1001px;
+        width:688px;
+        height:343px;
+    }
+
+    #imgMuneco{
+        display:none;
+    }
+
+    #txtOutIndication{
+        top:32px;
     }
 
     #txtOut{
-        width: 624px;
-        height: 180px;
-    }
-    
-    #copybttn{
-        width: 624px;
-        height: 67px;
-        left: 72px;
-        top: 1245px;
+        width:624px;
+        height:180px;
     }
 
+    #copybttn{
+        left:32px;
+        width:624px;
+        bottom:32px;
+    }
+
+
+    #informacion{
+        left:40px;
+        top:1360px;
+    }
 }
 
 @media only screen and (max-width:375px){
-    #imgMuneco{
-        display:none;
-    }
-  
-    #Logo{
-        position: absolute;
+
+    #aluraLogo{
+        position:absolute;
         left:16px;
         top:24px;
+        padding:0;
     }
 
     #txtInArea{
-        width: 343px;
-        height: 624px;
-        left: 16px;
-        top: 152px;
-    }
-
-    #botones{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 343px;
-        height: 158px;
-        left: 16px;
-        top: 874px;
-        }
-
-
-    .buttons{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 24px;
-        width: 332px;
-        height: 67px;
-        justify-content: center;
-    }
-
-
-    #txtOutArea{
-        width: 343px;
-        height: 595px;
-        left: 16px;
-        top: 1096px;
-    }
-
-    #txtOutIndication{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        height: 69px;
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
+        width:343px;
+        height:624px;
+        top:152px;
+        left:16px;
     }
 
     #indicaciones{
-        position:absolute;
-        width: 229px;
-        height: 18px;
-        left: 16px;
-        top: 840px;
+        left:16px;
+    }
+
+    #botones{
+        flex-direction: column;
+        width:343px;
+        height:158px;
+        top:883px;
+        left:16px;
+    }
+
+    .buttons{
+        width:343px;
+        height:67px;
+    }
+
+    #txtOutArea{
+        width:343px;
+        height:595px;
+        top:1120px;
+        left:16px;
     }
 
     #txtOut{
-        width: 279px;
-        height: 432px
+        width:279px;
+        height:432px;
     }
-    
+
     #copybttn{
-        width: 85%;
-        height: 67px;
-        left: 38px;
-        top: 1605px;
+        width:279px;
+        height:67px;
+        top:496px;
+    }
+
+    #informacion{
+        top: 1730px;
     }
 
 }
