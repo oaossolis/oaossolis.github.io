@@ -3,7 +3,6 @@ body{
     background-color: #F3F5FC;;
     padding:0;
     margin:0;
-    overflow-x: hidden;
 }
 
 #wrapper{
@@ -247,10 +246,12 @@ i{
         height:624px;
         top:152px;
         left:16px;
+        
     }
 
     #indicaciones{
         left:16px;
+        
     }
 
     #botones{
@@ -259,6 +260,7 @@ i{
         height:158px;
         top:883px;
         left:16px;
+        
     }
 
     .buttons{
@@ -271,6 +273,7 @@ i{
         height:595px;
         top:1120px;
         left:16px;
+        
     }
 
     #txtOut{
